@@ -20,9 +20,6 @@ export const appConfig: ApplicationConfig = {
       ripple: true,
       theme: {
         preset: Nora,
-        options: {
-          darkModeSelector: '.p-app-dark',
-        },
       },
     }),
     provideBrowserGlobalErrorListeners(),

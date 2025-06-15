@@ -1,0 +1,14 @@
+<!-- src\app\components\header.component.html -->
+
+<header>
+  <p-menubar [model]="items">
+    <ng-template #end>
+      <p-button
+        [icon]="colorMode === 'light' ? 'pi pi-moon' : 'pi pi-sun'"
+        [rounded]="true"
+        ariaLabel="Toggle color theme"
+        (onClick)="toggleColorTheme()"
+      />
+    </ng-template>
+  </p-menubar>
+</header>
