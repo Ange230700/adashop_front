@@ -1,7 +1,6 @@
 // src\app\app.ts
 
-import { Component, OnInit } from '@angular/core';
-import { PrimeNG } from 'primeng/config';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '~/src/app/components/header.component';
 
@@ -10,12 +9,6 @@ import { HeaderComponent } from '~/src/app/components/header.component';
   imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.html',
 })
-export class App implements OnInit {
+export class App {
   protected title = 'adashop_front';
-
-  constructor(private readonly primeng: PrimeNG) {}
-
-  ngOnInit(): void {
-    this.primeng.ripple.set(true);
-  }
 }
