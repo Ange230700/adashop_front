@@ -4,10 +4,11 @@
   <p-menubar [model]="items">
     <ng-template #end>
       <p-button
+        (click)="toggleColorMode()"
+        (keydown)="onButtonKeyDown($event)"
         [icon]="colorMode === 'light' ? 'pi pi-moon' : 'pi pi-sun'"
         [rounded]="true"
-        ariaLabel="Toggle color theme"
-        (onClick)="toggleColorTheme()"
+        ariaLabel="Toggle color scheme"
       />
     </ng-template>
   </p-menubar>
